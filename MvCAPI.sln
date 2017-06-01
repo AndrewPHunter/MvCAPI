@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvCAPI", "MvCAPI\MvCAPI.csproj", "{A568BBE6-2613-4C57-9890-E78EB1E1F03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbService", "DbService\DbService.csproj", "{C38E121A-3E5F-499B-B48D-F743293800D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A568BBE6-2613-4C57-9890-E78EB1E1F03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A568BBE6-2613-4C57-9890-E78EB1E1F03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A568BBE6-2613-4C57-9890-E78EB1E1F03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A568BBE6-2613-4C57-9890-E78EB1E1F03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38E121A-3E5F-499B-B48D-F743293800D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38E121A-3E5F-499B-B48D-F743293800D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38E121A-3E5F-499B-B48D-F743293800D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38E121A-3E5F-499B-B48D-F743293800D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

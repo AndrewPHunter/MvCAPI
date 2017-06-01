@@ -1,0 +1,53 @@
+﻿@model IList<DbService.ApprovedUser>
+
+@{
+    ViewBag.Title = "My Awesome App";
+}
+
+<div class="row">
+    <div class="jumbotron">
+        <h1>My Awesome App</h1>
+        <p>Hello and welcome to my awesome app. See the list of authorized users below</p>
+    </div>
+</div>
+<div class="row">
+    
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h2>Approved Users</h2>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr><td>Email</td><td>First Name</td><td>Last Name</td><td></td></tr>
+                </thead>
+                <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Email</td>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
+                        <td class="text-center">
+                            @using (Html.BeginForm("Delete", "Home"))
+                            {
+                                @Html.Hidden("email", user.Email)
+                                <input type="submit"
+                                       class="btn btn-danger btn-sm"
+                                       value="Delete"
+                                />
+                            }
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            @Html.ActionLink("New User", "Create", null,new{@class="btn btn-primary"})
+        </div>
+    </div>
+</div>
+
+
+
